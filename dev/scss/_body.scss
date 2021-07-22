@@ -3,7 +3,7 @@ body {
   font-weight: $body-font-weight;
 
   a {
-    color: map-get($colors, secondary-color);
+    color: map-get($secondary-color);
     text-decoration: none;
   }
 

@@ -34,7 +34,7 @@
 //mixins for basic buttons in the site
 @mixin basic-button-style {
   padding: 1rem;
-  background-color: map-get($colors, primary-color);
-  color: map-get($colors, secondary-color);
+  background-color: map-get($primary-color);
+  color: map-get($secondary-color);
   font-weight: 700;
 }

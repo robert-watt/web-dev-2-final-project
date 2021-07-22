@@ -19,12 +19,17 @@ $small-spacing: 0.5rem;
 $base-spacing: 1rem;
 $double-spacing: 2rem;
 
-//main colors
-$colors: (
-  primary-color: rgb(43, 113, 165),
-  secondary-color: white,
-  footer-bg-color: rgb(22, 89, 140),
-  hover-icon-color: rgb(168, 170, 172),
+//colors
+$primary-color: rgb(43, 113, 165);
+$secondary-color: #fff;
+$footer-bg-color: rgb(22, 89, 140);
+$hover-icon-color: rgb(168, 170, 172);
+
+//weights
+$font-weights: (
+    "body": 300,
+    "headings": 400,
+    "navigation": 700,
 );
 
 //max width for <main>

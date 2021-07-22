@@ -21,12 +21,11 @@
 	<header>
 		<!-- Navigation -->
 		<nav>
-			<h1 class="logo"><span>Food</span>Explorer</h1>
+			<img src="images/logo.png" alt="Logo">
+
 
 			<div class="menu-button">
-				<span></span>
-				<span></span>
-				<span></span>
+				<img src="images/menu.png" alt="menu button">
 			</div>
 
 
@@ -34,7 +33,7 @@
 			<div class="search-bar">
 				<input class="search-input" type="text" placeholder="Search">
 				<!-- fat search icon, not inside bar -->
-				<i class="fas fa-search"></i>
+				<img src="images/search.png" alt="Search Icon">
 			</div>
 
 			<div class="nav-items">
@@ -62,17 +61,20 @@
 	<main>
 		<section class="gallery">
 			<div class="gallery-item">
-				<img src="" alt="">
+				<picture>
+					<source media="(min-width: 500px)" srcset="images/mussel.jpg">
+					<img src="images/mussel_small.jpg" alt="Mussles">
+				</picture>
 				<p>Lorem ipsum dolor sit</p>
 			</div>
 
 			<div class="gallery-item">
-				<img src="" alt="">
+				<img src="images/salad.jpg" alt="Potato Salad">
 				<p>Lorem, ipsum dolor</p>
 			</div>
 
 			<div class="gallery-item">
-				<img src="" alt="">
+				<img src="images/pancake.jpg" alt="Pancakes">
 				<p>Sit amet conesectetur</p>
 			</div>
 		</section>
@@ -83,22 +85,22 @@
 			<div class="recipies-ul">
 				<ul>
 					<li>
-						<img src="images/kitten.jpg" alt="">
+						<img src="images/lamb_tb.jpg" alt="Lamb dish">
 
 						<p>Met consec tetur elit</p>
 					</li>
 					<li>
-						<img src="images/kitten.jpg" alt="">
+						<img src="images/breakfast_tb.jpg" alt="Breakfast">
 
 						<p>Archi tecto dolores</p>
 					</li>
 					<li>
-						<img src="images/kitten.jpg" alt="">
+						<img src="images/calamari_tb.jpg" alt="Calamari">
 
 						<p>Mexpe dita ciatis</p>
 					</li>
 					<li>
-						<img src="images/kitten.jpg" alt="">
+						<img src="images/steak_tb.jpg" alt="Steak">
 
 						<p>Fugiat eaque aore</p>
 					</li>
@@ -134,15 +136,14 @@
 		</section>
 
 		<section class="blog">
-			<!-- title h3? -->
 			<article class="blog-card">
 				<div class="card-title">
-					<h3>Lorem ipsum dolor sit amet</h3>
+					<h2>Lorem ipsum dolor sit amet</h2>
 					<p class="date">Posted by Mike Lee on Sunday, August 25, 2013</p>
 				</div>
 
 				<div class="card-content">
-					<img src="" alt="">
+					<img src="images/pasta.jpg" alt="Shrimp Pasta">
 					<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non molestias quaerat magni quos nobis exercitationem porro eligendi eos dolor explicabo?</p>
 
 					<button>Read More...</button>
@@ -151,12 +152,12 @@
 
 			<article class="blog-card">
 				<div class="card-title">
-					<h3>Lorem ipsum dolor sit amet</h3>
+					<h2>Lorem ipsum dolor sit amet</h2>
 					<p class="date">Posted by Mike Lee on Monday, July 29, 2013</p>
 				</div>
 
 				<div class="card-content">
-					<img src="" alt="">
+					<img src="images/ramen.jpg" alt="Ramen">
 					<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit unde iusto vel quod saepe pariatur expedita reprehenderit quisquam. Nobis.</p>
 
 					<button>Read More...</button>
@@ -164,7 +165,7 @@
 			</article>
 
 			<div class="older-posts">
-				<p><span></span> Older Posts</p>
+				<img src="images/previous_btn.png" alt="Older Posts">
 			</div>
 		</section>
 	</main>

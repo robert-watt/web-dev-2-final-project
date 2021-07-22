@@ -1,0 +1,14 @@
+body {
+  font-family: $body-font;
+  font-weight: $body-font-weight;
+
+  a {
+    color: map-get($colors, secondary-color);
+    text-decoration: none;
+  }
+
+  a:visited,
+  a:focus {
+    text-decoration: none;
+  }
+}

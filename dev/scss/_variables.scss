@@ -40,10 +40,3 @@ $breakpoint-mobile: 500px;
 $breakpoint-tablet-small: 670px;
 $breakpoint-tablet-large: 700px;
 $breakpoint-desktop: 770px;
-
-//styles for unordered list
-@mixin ul-base {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}

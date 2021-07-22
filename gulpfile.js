@@ -121,7 +121,7 @@ function jsTask() {
     .pipe(gulpif(devMode, sourcemaps.write('.'))) // Writes sourcemaps (dev mode)
     .pipe(gulpif(devMode, dest(folders.jsDev))) // Puts concatenated JS file in dev scripts folder (dev mode)
     .pipe(gulpif(buildMode, uglify())) // Compresses JS file (build mode)
-    .pipe(gulpif(buildMode, dest(folders.jsDistFolder))); // Copies concatenated and compressed JS file to the dist scripts folder (build mode)
+    .pipe(gulpif(buildMode, dest(folders.jsDist))); // Copies concatenated and compressed JS file to the dist scripts folder (build mode)
 }
 
 // jQuery Task:

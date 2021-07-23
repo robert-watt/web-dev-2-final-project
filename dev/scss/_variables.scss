@@ -1,12 +1,7 @@
 //font variables
 $nav-font: 'Roboto Condensed', sans-serif;
-$nav-font-weight: 700;
-
 $heading-font: 'Roboto Condensed', sans-serif;
-$heading-font-weight: 400;
-
 $body-font: 'Roboto', sans-serif;
-$body-font-weight: 300;
 
 $line-height: 1.4;
 
@@ -14,18 +9,22 @@ $standard-font-size: 1rem;
 $medium-font-size: 2rem;
 $large-font-size: 3rem;
 
+$font-weights: (
+  “body”: 300,
+  “headings”: 400,
+  “navigation”: 700,
+);
+
 //common spacing
 $small-spacing: 0.5rem;
 $base-spacing: 1rem;
 $double-spacing: 2rem;
 
 //main colors
-$colors: (
-  primary-color: rgb(43, 113, 165),
-  secondary-color: white,
-  footer-bg-color: rgb(22, 89, 140),
-  hover-icon-color: rgb(168, 170, 172),
-);
+$primary-color: rgb(43, 113, 165);
+$secondary-color: #fff;
+$footer-bg-color: rgb(22, 89, 140);
+$hover-icon-color: rgb(168, 170, 172);
 
 //max width for <main>
 $main-max-width: 1050px;
@@ -35,10 +34,3 @@ $breakpoint-mobile: 500px;
 $breakpoint-tablet-small: 670px;
 $breakpoint-tablet-large: 700px;
 $breakpoint-desktop: 770px;
-
-//styles for unordered list
-@mixin ul-base {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}

@@ -34,7 +34,14 @@
 //mixins for basic buttons in the site
 @mixin basic-button-style {
   padding: 1rem;
-  background-color: map-get($colors, primary-color);
-  color: map-get($colors, secondary-color);
+  background-color: $primary-color;
+  color: $secondary-color;
   font-weight: 700;
+}
+
+//styles for unordered list
+@mixin ul-base {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

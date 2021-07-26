@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
 		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<link rel="stylesheet" href="styles/styles.css?cb=1627273187903">
+	<link rel="stylesheet" href="styles/styles.css?cb=1627319009748">
 
 	<!-- favicon -->
 	<link rel="shortcut icon" href="images/favicon.ico" />
@@ -94,53 +94,61 @@
 		<main>
 			<section class="gallery-section">
 				<figure class="gallery-item">
-					<picture>
-						<!-- unsure about the breakpoints for this image -->
-						<source media="(max-width: 500px)" srcset="images/mussel_small.jpg">
-						<img src="images/mussel.jpg" alt="Mussles">
-					</picture>
-					<figcaption>Lorem ipsum dolor sit</figcaption>
+					<div class="galley-muscles">
+						<picture>
+							<!-- unsure about the breakpoints for this image -->
+							<source media="(max-width: 500px)" srcset="images/mussel_small.jpg">
+							<img src="images/mussel.jpg" alt="Mussles">
+						</picture>
+						<figcaption class="food-text">LOREM IPSUM DOLER SIT</figcaption>
+					</div>
 				</figure>
 
-				<figure class="gallery-item">
-					<img src="images/salad.jpg" alt="Potato Salad">
-					<figcaption>Lorem, ipsum dolor</figcaption>
-				</figure>
-
-				<figure class="gallery-item">
-					<img src="images/pancake.jpg" alt="Pancakes">
-					<figcaption>Sit amet conesectetur</figcaption>
-				</figure>
+				<div class="gallery-row">
+					<figure class="gallery-item">
+						<img src="images/salad.jpg" alt="Potato Salad">
+						<figcaption class="food-text">LOREM IPSUM DULOR</figcaption>
+					</figure>
+					<figure class="gallery-item">
+						<img src="images/pancake.jpg" alt="Pancakes">
+						<figcaption class="food-text">SIT AMET CONSECTETUR</figcaption>
+					</figure>
+				</div>
 			</section>
 
 			<section class='side-section'>
 
 				<section class="recipies-group">
-					<h2>Latest Recipies</h2>
-
-					<div class='recipes-item'>
-						<img src="images/lamb_tb.jpg" alt="Lamb dish">
-						<p>Met consec tetur elit</p>
+					
+					<div class="h2-div">
+						<h2>Latest Recipies</h2>
 					</div>
 
 					<div class='recipes-item'>
+						<img src="images/lamb_tb.jpg" alt="Lamb dish">
+						<p>Met consec <br> tetur elit</p>
+					</div>
+
+					<div class='recipes-item odd'>
 						<img src="images/breakfast_tb.jpg" alt="Breakfast">
-						<p>Archi tecto dolores</p>
+						<p>Archi tecto<br> dolores</p>
 					</div>
 
 					<div class='recipes-item'>
 						<img src="images/calamari_tb.jpg" alt="Calamari">
-						<p>Mexpe dita ciatis</p>
+						<p>Mexpe dita<br> ciatis</p>
 					</div>
 
-					<div class='recipes-item'>
+					<div class='recipes-item odd'>
 						<img src="images/steak_tb.jpg" alt="Steak">
-						<p>Fugiat eaque aore</p>
+						<p>Fugiat eaque<br> aore</p>
 					</div>
 				</section>
 
 				<section class="cuisines-group">
-					<h2>Cuisines</h2>
+					<div class="h2-div">
+						<h2>Cuisines</h2> 
+					</div>
 
 					<div class="cuisines-ul">
 						<ul>
@@ -212,7 +220,7 @@
 	<!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 	<script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<script src="scripts/script.min.js?cb=1627273187903"></script>
+	<script src="scripts/script.min.js?cb=1627319009748"></script>
 	<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
 </body>
 

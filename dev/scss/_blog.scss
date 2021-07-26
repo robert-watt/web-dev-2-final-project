@@ -1,5 +1,6 @@
 .blog-section {
-    
+    grid-row: 2 / 3;
+    padding: $small-spacing;
     .blog-card {
         background: $secondary-color;
         padding: 0.5rem;

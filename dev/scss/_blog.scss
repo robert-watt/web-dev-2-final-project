@@ -1,0 +1,79 @@
+.blog-section {
+    
+    .blog-card {
+        background: $secondary-color;
+        padding: 0.5rem;
+        margin-bottom: $base-spacing;
+        &:after {
+            content: '';
+            clear: both;
+        }
+        .card-title {
+            padding-bottom: $double-spacing;
+
+            h2 {
+                margin: 0;
+                font-size: $medium-font-size;
+                font-family: $heading-font;
+                color: $primary-color;
+                text-transform: uppercase;
+                font-weight: map-get($font-weights, headings);
+            }
+
+            p.date {
+                margin: 0;
+                font-size: $standard-font-size;
+                font-family: $heading-font;
+                font-weight: map-get($font-weights, headings);
+            }
+        }
+
+        .card-content {
+            overflow: auto;
+            img {
+                max-height: 190px;
+                max-width: 100%;
+                object-fit: cover;
+            }
+
+            p.card-text {
+                margin: 0;
+                line-height: $line-height;
+                padding: $small-spacing 0;
+                font-size: $standard-font-size;
+                font-family: $heading-font;
+                font-weight: map-get($font-weights, body);
+            }
+
+            a { 
+                margin: $small-spacing 0;
+                background: $footer-bg-color;
+                padding: $small-spacing;
+                color: $secondary-color;
+                text-transform: uppercase;
+                font-family: $nav-font;
+                font-weight: map-get($font-weights, navigation);
+                float: right;
+            }
+        }
+    }
+
+    .older-posts {
+        a{
+            color: $footer-bg-color;
+            font-size: $medium-font-size;
+            font-family: $heading-font;
+            font-weight: map-get($font-weights, headings);
+        }
+
+        i {
+            padding-right: $small-spacing;
+        }
+    }
+
+    @media (min-width: 690px) {
+        .card-content {
+            padding: 2rem 1rem;
+        }
+    }
+}

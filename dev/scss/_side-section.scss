@@ -1,0 +1,76 @@
+.side-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10rem;
+}
+
+.h2-div {
+    background-color: #2b71a5;
+    color: white;
+    padding: .5rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+// latest recipies
+.recipies-group {
+    display: block;
+    width: 250px;
+    font-family: $body-font;
+    background-color: $secondary-color;
+    margin: 0px;
+}
+
+.recipes-item {
+    display: flex;
+    text-transform: uppercase;
+    font-family: $body-font;
+    padding-left: 5px;
+    padding-right: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    p {
+        padding-left: 10px;
+        line-height: 1.4;
+    }
+
+    img {
+        border: 2px solid $primary-color;
+    }
+}
+
+.odd {
+    background-color:#dcdcdc;
+}
+
+.h2.div {
+    background-color: #2b71a5;
+    color: white;
+    padding: 1rem;
+    font-family: $body-font;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}git status
+
+// end recipies group
+
+//cuisines
+.cuisines-group {
+    display: block;
+    width: 250px;
+    background-color: $secondary-color;
+    margin-top: 1rem;
+    padding: none;
+}
+
+.cuisines-ul {
+    font-family: $body-font;
+    line-height: 1.75;
+    padding: 10px 0 10px 10px;
+}
+

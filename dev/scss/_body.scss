@@ -1,6 +1,6 @@
 body {
   font-family: $body-font;
-  font-weight: map.get($font-weights, body);
+  font-weight: map-get($font-weights, body);
 
   a {
     text-decoration: none;

@@ -28,12 +28,13 @@
 	<!-- Put your HTML code here... -->
 	<div class="body-wrapper">
 		<header>
-			<nav>
-				<div class='site-top-bar'>
-					<picture class='site-logo'>
-						<source media="(max-width: 330px)" srcset="images/small_logo.jpg">
-						<img src="images/logo.png" alt="site logo">
-					</picture>
+			<div class='site-top-bar'>
+				<picture class='site-logo'>
+					<source media="(max-width: 330px)" srcset="images/small_logo.jpg">
+					<img src="images/logo.png" alt="site logo">
+				</picture>
+
+				<div class='top-bar-right'>
 					<div class="menu-button">
 						<a class="toggle" href="#"><i class="fas fa-bars"></i></a>
 					</div>
@@ -41,19 +42,47 @@
 						<input class="search-input" type="text" placeholder="Search">
 						<img src="images/search.png" alt="Search Icon">
 					</div>
+					<div class="top-bar-social-media-list">
+						<ul>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-google"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						</ul>
+					</div>
 				</div>
+			</div>
 
+			<nav>
 				<div class="nav-items">
-					<ul class="nav-ul">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Reviews</a></li>
-						<li><a href="#">Recipies</a></li>
-						<li><a href="#">Contact</a></li>
-						<div class="social-media-list">
-							<li><i class="fab fa-facebook-f"></i></li>
-							<li><i class="fab fa-google"></i></li>
-							<li><i class="fab fa-twitter"></i></li>
+					<ul class="nav-ul menu">
+						<div class="search-bar item">
+							<li>
+								<input class="search-input" type="text" placeholder="Search">
+								<img src="images/search.png" alt="Search Icon">
+							</li>
+						</div>
+						<li class='item'><a href="#">Home</a></li>
+						<li class='item'><a href="#">About</a></li>
+						<li class='item'><a href="#">Reviews</a></li>
+						<li class='item'><a href="#">Recipies</a></li>
+						<li class='item'><a href="#">Contact</a></li>
+
+						<div class="nav-social-media-list item">
+							<li><a href="#">
+									<div class='moveUp-icons'>
+										<i class="fab fa-facebook-f"></i><i class="fab fa-facebook-f grey-icon"></i>
+									</div>
+								</a></li>
+							<li><a href="#">
+									<div class='moveUp-icons'>
+										<i class="fab fa-google"></i><i class="fab fa-google grey-icon"></i>
+									</div>
+								</a></li>
+							<li><a href="#">
+									<div class='moveUp-icons'>
+										<i class="fab fa-twitter"></i><i class="fab fa-twitter grey-icon"></i>
+									</div>
+								</a></li>
 						</div>
 					</ul>
 				</div>

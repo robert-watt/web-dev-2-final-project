@@ -1,8 +1,10 @@
 //.active is for when we click the menu icon
-.active .item {
-  display: block;
-}
+.active {
+  .item {
+    display: block;
+  }
 
-.active .nav-social-media-list {
-  display: flex;
+  .nav-social-media-list {
+    display: flex;
+  }
 }

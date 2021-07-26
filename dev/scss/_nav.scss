@@ -1,0 +1,117 @@
+nav {
+  text-align: center;
+
+  a {
+    color: $secondary-color;
+  }
+
+  .search-bar {
+    position: relative;
+    input {
+      font-size: 0.9rem;
+      padding: $small-spacing;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(221, 221, 221);
+      border: 1px solid rgb(24, 91, 143);
+    }
+
+    img {
+      position: absolute;
+      right: 6px;
+      top: 7px;
+    }
+  }
+
+  .nav-social-media-list {
+    @include flex-layout-row;
+    justify-content: center;
+    background-color: $secondary-color;
+    border: 1px solid rgb(24, 91, 143);
+    height: 36px;
+
+    .moveUp-icons {
+      display: flex;
+      flex-direction: column;
+      height: 1.375rem;
+      overflow: hidden;
+
+      .grey-icon {
+        color: rgb(221, 221, 221);
+      }
+
+      i {
+        margin: 0 $small-spacing;
+        color: $primary-color;
+        position: relative;
+        top: 0;
+        font-size: 1.375rem;
+        transition: all 0.5s;
+      }
+
+      &:hover i {
+        top: -1.375rem;
+      }
+    }
+  }
+
+  & ul > li {
+    padding: $small-spacing;
+    background-color: $primary-color;
+    border: 1px solid rgb(24, 91, 143);
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: $secondary-color;
+
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .item {
+    display: none;
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    .nav-items {
+      background-color: rgb(22, 88, 140);
+
+      .menu {
+        @include flex-layout-row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0 $base-spacing;
+
+        max-width: $main-max-width;
+        margin: 0 auto;
+
+        .item {
+          display: block;
+          border: none;
+          flex: 1 1 auto;
+        }
+
+        .nav-social-media-list {
+          display: none;
+        }
+
+        .search-bar {
+          display: none;
+
+          @media (min-width: $breakpoint-desktop) {
+            display: block;
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet-small) {
+    .item {
+      font-size: 1.1rem;
+    }
+  }
+}

@@ -3,9 +3,11 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 5px;
+  max-height: 500px;
 
   .gallery-item {
     position: relative;
+    max-height: 230px;
   }
 
   img {

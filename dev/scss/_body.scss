@@ -21,4 +21,9 @@ body {
     max-width: $main-max-width;
     margin: 0 auto;
   }
+
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
 }

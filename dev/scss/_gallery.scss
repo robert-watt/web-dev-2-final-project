@@ -3,7 +3,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 5px;
-  max-height: 500px;
+
+  overflow: auto;
 
   .gallery-item {
     position: relative;
@@ -18,6 +19,16 @@
     height: 230px;
   }
 
+  figure {
+    
+
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
   figcaption {
     text-transform: uppercase;
     z-index: 9;
@@ -30,6 +41,7 @@
     position: absolute;
     bottom: 0px;
     font-size: 1.35rem;
+
   }
 
   @media (min-width: $breakpoint-tablet-small) {

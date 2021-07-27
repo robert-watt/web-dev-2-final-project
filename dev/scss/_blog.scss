@@ -9,9 +9,13 @@
             content: '';
             clear: both;
         }
-        .card-title {
-            padding-bottom: $double-spacing;
 
+        .card-div {
+            max-width: 690px;
+            margin:auto;
+        }
+        .card-title {
+            padding: 1rem 0;
             h2 {
                 margin: 0;
                 font-size: $medium-font-size;
@@ -31,7 +35,10 @@
 
         .card-content {
             overflow: auto;
+            max-width: 690px;
+            margin: auto;
             img {
+                margin: auto;
                 max-height: 190px;
                 max-width: 100%;
                 object-fit: cover;
@@ -73,8 +80,17 @@
     }
 
     @media (min-width: 690px) {
-        .card-content {
-            padding: 2rem 1rem;
+        .card-div {
+            padding: 1rem 1rem 2rem 1rem;
+            .card-content {
+                padding-top: 1rem;
+    
+                .card-title {
+                    max-width: 690px;
+                    margin: auto;
+                }
+            }
         }
+
     }
 }

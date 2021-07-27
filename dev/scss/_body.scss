@@ -20,10 +20,16 @@ body {
   main {
     max-width: $main-max-width;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width:750px) {
+      .main-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+      }
+    }
   }
 
-  .main-wrapper {
-    display: grid;
-    grid-template-columns: 75% 25%;
-  }
+  
 }

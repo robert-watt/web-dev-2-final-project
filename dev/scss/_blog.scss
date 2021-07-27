@@ -1,96 +1,112 @@
 .blog-section {
-    grid-row: 2 / 3;
-    padding: $small-spacing;
-    .blog-card {
-        background: $secondary-color;
-        padding: 0.5rem;
-        margin-bottom: $base-spacing;
-        &:after {
-            content: '';
-            clear: both;
-        }
-
-        .card-div {
-            max-width: 690px;
-            margin:auto;
-        }
-        .card-title {
-            padding: 1rem 0;
-            h2 {
-                margin: 0;
-                font-size: $medium-font-size;
-                font-family: $heading-font;
-                color: $primary-color;
-                text-transform: uppercase;
-                font-weight: map-get($font-weights, headings);
-            }
-
-            p.date {
-                margin: 0;
-                font-size: $standard-font-size;
-                font-family: $heading-font;
-                font-weight: map-get($font-weights, headings);
-            }
-        }
-
-        .card-content {
-            overflow: auto;
-            max-width: 690px;
-            margin: auto;
-            img {
-                margin: auto;
-                max-height: 190px;
-                max-width: 100%;
-                object-fit: cover;
-            }
-
-            p.card-text {
-                margin: 0;
-                line-height: $line-height;
-                padding: $small-spacing 0;
-                font-size: $standard-font-size;
-                font-family: $heading-font;
-                font-weight: map-get($font-weights, body);
-            }
-
-            a { 
-                margin: $small-spacing 0;
-                background: $footer-bg-color;
-                padding: $small-spacing;
-                color: $secondary-color;
-                text-transform: uppercase;
-                font-family: $nav-font;
-                font-weight: map-get($font-weights, navigation);
-                float: right;
-            }
-        }
+  grid-row: 2 / 3;
+  padding: $small-spacing;
+  padding-top: 0;
+  .blog-card {
+    background: $secondary-color;
+    padding: $base-spacing;
+    margin-bottom: $small-spacing;
+    &:after {
+      content: '';
+      clear: both;
     }
 
+    .card-div {
+      max-width: 690px;
+      margin: auto;
+    }
+    .card-title {
+      padding: 0;
+      padding-bottom: $double-spacing;
+      h2 {
+        margin: 0;
+        font-size: $medium-font-size;
+        font-family: $heading-font;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: map-get($font-weights, headings);
+      }
+
+      p.date {
+        margin: 0;
+        margin-top: 0.25rem;
+        padding-right: $base-spacing;
+        font-size: 0.9rem;
+        font-family: $body-font;
+        font-weight: map-get($font-weights, headings);
+      }
+    }
+
+    .card-content {
+      overflow: auto;
+      max-width: 690px;
+      margin: auto;
+      img {
+        margin: auto;
+        max-height: 190px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      p.card-text {
+        margin: 0;
+        line-height: $line-height;
+        padding: $small-spacing 0;
+        font-size: 0.9rem;
+        font-family: $body-font;
+        font-weight: map-get($font-weights, body);
+      }
+
+      a {
+        margin: $small-spacing 0;
+        background: $primary-color;
+        padding: $small-spacing;
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-family: $nav-font;
+        font-weight: map-get($font-weights, navigation);
+        float: right;
+      }
+    }
+  }
+
+  .older-posts {
+    margin-top: $base-spacing;
+    margin-bottom: $double-spacing;
+    a {
+      color: $footer-bg-color;
+      font-size: $medium-font-size;
+      font-family: $heading-font;
+      font-weight: map-get($font-weights, headings);
+    }
+
+    i {
+      padding-right: $small-spacing;
+    }
+  }
+
+  @media (min-width: $breakpoint-mobile) {
     .older-posts {
-        a{
-            color: $footer-bg-color;
-            font-size: $medium-font-size;
-            font-family: $heading-font;
-            font-weight: map-get($font-weights, headings);
-        }
-
-        i {
-            padding-right: $small-spacing;
-        }
+      margin-top: $double-spacing;
     }
+  }
 
-    @media (min-width: 690px) {
-        .card-div {
-            padding: 1rem 1rem 2rem 1rem;
-            .card-content {
-                padding-top: 1rem;
-    
-                .card-title {
-                    max-width: 690px;
-                    margin: auto;
-                }
-            }
+  @media (min-width: $breakpoint-tablet-large) {
+    .card-div {
+      //padding: $base-spacing;
+      padding-top: 0;
+
+      .card-title h2 {
+        font-size: 2.5rem;
+      }
+      .card-content {
+        padding-top: 1rem;
+
+        .card-title {
+          max-width: 690px;
+          margin: auto;
         }
-
+      }
     }
+  }
 }

@@ -1,6 +1,12 @@
 footer {
+  font-family: $heading-font;
   background-color: $footer-bg-color;
   color: $secondary-color;
-  padding: 1px;
+  padding: $base-spacing;
   text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+  }
 }
